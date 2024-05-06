@@ -32,8 +32,8 @@ jobs:
           app-id: ${{ secrets.APPLICATIONID }}
           client-secret: ${{ secrets.SECRETKEY }}
           tenant-id: ${{ secrets.TENANT }}
-          solution-name: con_core_solution
-          solution-output-file: solutions/con_core_solution.zip
+          solution-name: con_coresolution
+          solution-output-file: solutions/con_coresolution.zip
 
       - name: export-solution action
         uses: microsoft/powerplatform-actions/export-solution@v0
@@ -42,14 +42,14 @@ jobs:
           app-id: ${{ secrets.APPLICATIONID }}
           client-secret: ${{ secrets.SECRETKEY }}
           tenant-id: ${{ secrets.TENANT }}
-          solution-name: con_core_solution
-          solution-output-file: solutions/con_core_solution_managed.zip
+          solution-name: con_coresolution
+          solution-output-file: solutions/con_coresolution_managed.zip
           managed: true
 
       - name: unpack-solution action
         uses: microsoft/powerplatform-actions/unpack-solution@v0
         with:
-          solution-file: solutions/con_core_solution.zip
-          solution-folder: deployment/con_core_solution }}
+          solution-file: solutions/con_coresolution.zip
+          solution-folder: deployment/con_coresolution
           solution-type: 'both'
           overwrite-files: true
