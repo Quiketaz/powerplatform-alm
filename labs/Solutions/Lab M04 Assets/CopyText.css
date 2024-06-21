@@ -1,0 +1,32 @@
+.pcfdev\.CopyText input[type=text].oeinput{
+    margin: 0 35px 0 7px;
+    width: 50%;
+    height: 2.5rem;
+    line-height: 2.5rem;
+    padding-right: 0.5rem;
+    padding-left: 0.5rem;
+    border-style: solid;
+    border-width: 1px;
+    padding-bottom: 0px;
+    font-size: 1rem;
+    font-weight: 600;
+    color: rgb(0,0,0);
+    border-color: transparent;
+    }
+.pcfdev\.CopyText .container{
+        display: flex;
+        align-items:center;
+        position:relative;
+    }
+.pcfdev\.CopyText .wrapper{
+        position:relative;
+    }
+.pcfdev\.CopyText .reactinput{
+        width:100%;
+    }
+.pcfdev\.CopyText .reactbutton{
+        z-index: 2;
+        top: 0;
+        right: 0;
+        position: absolute;
+    }
